@@ -8,4 +8,4 @@ eureka:
     register-with-eureka: true # Api Gateway를 Eureka Client로 등록
     fetch-registry: true # Api Gateway가 다른 Eureka Server의 등록 정보를 가져오도록 설정
     service-url:
-      defaultZone: http://localhost:8761/eureka # Eureka Server의 기본 URL 설정
+      defaultZone: http://localhost:8888/eureka # Eureka Server의 기본 URL 설정
