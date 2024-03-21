@@ -1,0 +1,9 @@
+server:
+  port: 8888 # Eureka Server의 포트 설정
+spring:
+  application:
+    name: service-discovery
+eureka:
+  client:
+    register-with-eureka: false # Eureka Server 자체를 Eureka Client로 등록하지 않음
+    fetch-registry: false # Eureka Server가 다른 Eureka Server의 등록 정보를 가져오지 않도록 설정
