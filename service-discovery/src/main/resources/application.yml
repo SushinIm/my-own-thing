@@ -1,11 +1,13 @@
 server:
-  port: 8888 # Eureka Server의 포트 설정
+  port: 8888
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8888/eureka
+
 spring:
   application:
     name: service-discovery
-eureka:
-  client:
-    register-with-eureka: false # Eureka Server 자체를 Eureka Client로 등록하지 않음
-    fetch-registry: false # Eureka Server가 다른 Eureka Server의 등록 정보를 가져오지 않도록 설정
-    service-url:
-      defaultZone: http://localhost:8888/eureka # Eureka Server의 기본 URL 설정
